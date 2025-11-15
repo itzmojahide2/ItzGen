@@ -1,0 +1,25 @@
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { PlanProvider } from './contexts/PlanContext';
+import { AuthProvider } from './pages/AuthContext';
+import { AdminProvider } from './contexts/AdminContext';
+
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
+}
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <AdminProvider>
+      <AuthProvider>
+        <PlanProvider>
+          <App />
+        </PlanProvider>
+      </AuthProvider>
+    </AdminProvider>
+  </React.StrictMode>
+);

@@ -1,0 +1,5 @@
+{
+  "name": "ItzGen - AI Generation Platform",
+  "description": "A modern glass-themed AI generation platform powered by Gemini AI API, featuring image, thumbnail, and switch generators. Includes simulated user profiles, plans, and payment systems.",
+  "requestFramePermissions": []
+}
